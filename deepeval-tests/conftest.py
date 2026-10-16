@@ -2,10 +2,8 @@
 Shared fixtures and configuration for deepeval LLM evaluation tests.
 """
 
-import pytest
 from deepeval.metrics import GEval
 from deepeval.test_case import LLMTestCaseParams
-
 
 # ---------------------------------------------------------------------------
 # Reusable GEval metric factories

@@ -6,15 +6,17 @@ summaries with relevant key points.
 """
 
 import json
+
 import pytest
-from deepeval import assert_test
-from deepeval.test_case import LLMTestCase, LLMTestCaseParams
-from deepeval.metrics import GEval
-from deepeval.dataset import EvaluationDataset
-
 from api_client import summarize_text
-from conftest import json_schema_metric, output_correctness_metric, answer_relevancy_metric
-
+from conftest import (
+    answer_relevancy_metric,
+    json_schema_metric,
+)
+from deepeval import assert_test
+from deepeval.dataset import EvaluationDataset
+from deepeval.metrics import GEval
+from deepeval.test_case import LLMTestCase, LLMTestCaseParams
 
 # ---------------------------------------------------------------------------
 # Test inputs and expected behaviors
